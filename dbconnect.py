@@ -19,7 +19,7 @@ class database():
         except Exception as e:
             print("Can't insert values in table " , e)
         else:
-            print("values inserted sucessfully")
+            print("values inserted sucessfully!!! ")
     
     def get_detail(self, name , id):
         try:

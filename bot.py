@@ -2,8 +2,10 @@ import asyncio
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram.ext import Updater , CommandHandler , ContextTypes , ApplicationBuilder
-Token = "7609744932:AAEKZUVfVqg3owANN_ED1XzI5OX9D*****"
+import secretes
 
+Token = secretes.Telegram_Token
+ 
 # hello function
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
